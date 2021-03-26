@@ -1,0 +1,15 @@
+table {
+  width: 100%;
+}
+
+th {
+  width: 100px;
+}
+
+.mat-icon {
+  user-select: none;
+}
+.mat-icon:hover {
+  cursor: pointer;
+  color: green;
+}

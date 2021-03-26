@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 25px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.hide {
+  display: none;
+}
+.mat-spinner {
+  margin: 0 auto;
+}

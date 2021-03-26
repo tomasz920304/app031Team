@@ -1,0 +1,43 @@
+<form [formGroup]="formModel" autocomplete="off" class="example-form">
+
+    <mat-form-field class="example-full-width">
+        <mat-label>teamId</mat-label>
+        <input readonly formControlName="teamId" matInput>
+    </mat-form-field>
+
+
+
+    <mat-form-field class="example-full-width">
+        <mat-label>name*</mat-label>
+        <input formControlName="name" matInput>
+        <mat-hint *ngIf="_name.invalid && _name.touched">Name is required</mat-hint>
+    </mat-form-field>
+
+
+
+    <mat-form-field class="example-full-width">
+        <mat-label>year</mat-label>
+        <input type="number" step="1" formControlName="year" matInput>
+    </mat-form-field>
+
+
+
+    <mat-form-field class="example-full-width">
+        <mat-label>city</mat-label>
+        <input formControlName="city" matInput>
+    </mat-form-field>
+
+
+
+    <mat-form-field class="example-full-width">
+        <mat-label>country</mat-label>
+        <input formControlName="country" matInput>
+    </mat-form-field>
+
+
+    <p style="float: right;">
+        <button (click)="onSubmit()" [disabled]="formModel.invalid" mat-raised-button
+            mat-dialog-close="Done">Submit</button>
+    </p>
+
+</form>
